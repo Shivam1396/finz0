@@ -8,9 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
-/* ═══════════════════════════════════════
-   TOKENS
-═══════════════════════════════════════ */
 :root{
   --bg:          #04080f;
   --bg2:         #070d18;
@@ -37,15 +34,9 @@ body{
   font-family: var(--font-body);
   overflow-x: hidden;
 }
-
-/* custom scrollbar */
 ::-webkit-scrollbar{ width:6px; }
 ::-webkit-scrollbar-track{ background:var(--bg); }
 ::-webkit-scrollbar-thumb{ background:rgba(56,189,248,0.25); border-radius:99px; }
-
-/* ═══════════════════════════════════════
-   NAVBAR
-═══════════════════════════════════════ */
 nav{
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -100,10 +91,6 @@ nav.scrolled{ padding: 12px 48px; }
   transform: translateY(-2px);
   box-shadow: 0 8px 32px rgba(14,165,233,0.45);
 }
-
-/* ═══════════════════════════════════════
-   HERO — VIDEO
-═══════════════════════════════════════ */
 .hero{
   position: relative;
   height: 100vh;
@@ -122,8 +109,6 @@ nav.scrolled{ padding: 12px 48px; }
   z-index: 0;
   filter: brightness(0.35) saturate(0.7);
 }
-
-/* layered gradient overlay */
 .hero-overlay{
   position: absolute;
   inset: 0;
@@ -174,13 +159,7 @@ nav.scrolled{ padding: 12px 48px; }
   color: #fff;
   margin-bottom: 24px;
   animation: fadeUp 0.8s 0.15s ease both;
-}
-/* .hero-title em{
-  font-style: normal;
-  background: linear-gradient(90deg, var(--accent2), var(--accent), #7dd3fc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
+
  .hero-title em {
   font-style: normal;
   color: #fff;
@@ -321,10 +300,6 @@ nav.scrolled{ padding: 12px 48px; }
   letter-spacing: 0.07em;
   font-weight: 500;
 }
-
-/* ═══════════════════════════════════════
-   SERVICES SECTION
-═══════════════════════════════════════ */
 .services{
   padding: 120px 48px 100px;
   max-width: 1200px;
@@ -446,10 +421,6 @@ nav.scrolled{ padding: 12px 48px; }
   opacity:1;
   transform: translateX(0);
 }
-
-/* ═══════════════════════════════════════
-   FEATURES / HOW IT WORKS
-═══════════════════════════════════════ */
 .features{
   padding: 80px 48px 120px;
   background: var(--bg2);
@@ -534,10 +505,6 @@ nav.scrolled{ padding: 12px 48px; }
 }
 .testi-name{ font-weight:600; font-size:14px; color:#e2eaf5; }
 .testi-role{ font-size:12px; color:var(--muted); }
-
-/* ═══════════════════════════════════════
-   CTA BANNER
-═══════════════════════════════════════ */
 .cta-banner{
   margin: 0 48px 100px;
   border-radius: 28px;
@@ -577,10 +544,6 @@ nav.scrolled{ padding: 12px 48px; }
 }
 .cta-banner p{ font-size:17px; color:#64748b; margin-bottom:40px; position:relative; z-index:1; }
 .cta-banner .cta-actions{ display:flex; gap:16px; justify-content:center; position:relative; z-index:1; flex-wrap:wrap; }
-
-/* ═══════════════════════════════════════
-   FOOTER
-═══════════════════════════════════════ */
 footer{
   background: var(--surface);
   border-top: 1px solid var(--border);
@@ -625,10 +588,6 @@ footer{
   text-decoration:none;
 }
 .social-btn:hover{ background:rgba(56,189,248,0.1); border-color:rgba(56,189,248,0.3); }
-
-/* ═══════════════════════════════════════
-   KEYFRAMES
-═══════════════════════════════════════ */
 @keyframes fadeUp{
   from{ opacity:0; transform:translateY(30px); }
   to{ opacity:1; transform:translateY(0); }
@@ -647,10 +606,6 @@ footer{
   from{ opacity:0; transform:translateY(40px); }
   to{ opacity:1; transform:translateY(0); }
 }
-
-/* ═══════════════════════════════════════
-   RESPONSIVE
-═══════════════════════════════════════ */
 @media(max-width:1024px){
   .cards-grid{ grid-template-columns:repeat(2,1fr); }
   .testi-grid{ grid-template-columns:repeat(2,1fr); }
@@ -688,8 +643,6 @@ footer{
   </ul>
 
 </nav>
-
-<!-- ═══ HERO ═══ -->
 <section class="hero">
   <video autoplay muted loop playsinline poster="">
     <source src="WhatsApp Video 2026-02-27 at 7.55.37 PM.mp4" type="video/mp4">
@@ -715,8 +668,6 @@ footer{
     Scroll
   </div>
 </section>
-
-<!-- ═══ STATS BAR ═══ -->
 <div class="stats-bar">
   <div class="stats-inner">
     <div class="stat-item">
@@ -745,8 +696,6 @@ footer{
     </div>
   </div>
 </div>
-
-<!-- ═══ SERVICES ═══ -->
 <section class="services" id="services">
   <div class="services-header">
     <p class="section-tag">Services</p>
@@ -793,8 +742,6 @@ footer{
     </div>
   </div>
 </section>
-
-<!-- ═══ HOW IT WORKS ═══ -->
 <section class="features" id="how-it-works">
   <div class="features-inner">
 
@@ -848,8 +795,6 @@ footer{
     </div>
   </div>
 </section>
-
-<!-- ═══ TESTIMONIALS ═══ -->
 <section class="testimonials" id="testimonials">
   <p class="section-tag">Testimonials</p>
   <h2 class="section-head">Loved by 180,000+ users</h2>
@@ -890,8 +835,6 @@ footer{
     </div>
   </div>
 </section>
-
-<!-- ═══ CTA BANNER ═══ -->
 <div class="cta-banner">
   <h2>Ready to Take Control of<br>Your Finances?</h2>
   <p>Join over 180,000 Indians already growing smarter with Finzo.</p>
@@ -900,8 +843,6 @@ footer{
     <a href="#contact" class="btn-outline">Talk to Us</a>
   </div>
 </div>
-
-<!-- ═══ FOOTER ═══ -->
 <footer id="contact">
   <div class="footer-inner">
     <div class="footer-top">
@@ -963,13 +904,10 @@ footer{
 </footer>
 
 <script>
-/* ── Navbar scroll shrink ── */
 const navbar = document.getElementById("navbar");
 window.addEventListener("scroll", () => {
   navbar.classList.toggle("scrolled", window.scrollY > 60);
 });
-
-/* ── Intersection Observer for .card and .testi-card ── */
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
@@ -982,13 +920,9 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 document.querySelectorAll(".card, .testi-card").forEach(el => observer.observe(el));
-
-/* ── Smooth card transition (set custom transition-delay) ── */
 document.querySelectorAll(".card").forEach((card, i) => {
   card.style.transitionDelay = (i * 0.07) + "s";
 });
-
-/* ── Count-up animation for stats ── */
 function countUp(el, target, suffix, duration = 1800){
   const isFloat = target % 1 !== 0;
   let start = 0;
@@ -1021,7 +955,6 @@ const statsObserver = new IntersectionObserver((entries) => {
 const statsBar = document.querySelector(".stats-bar");
 if(statsBar) statsObserver.observe(statsBar);
 
-/* ── Staggered card transition duration sync ── */
 document.querySelectorAll(".testi-card").forEach((card, i) => {
   card.style.transitionDelay = (i * 0.12) + "s";
 });
@@ -1031,4 +964,5 @@ document.querySelectorAll(".testi-card").forEach((card, i) => {
 </script>
 
 </body>
+
 </html>
