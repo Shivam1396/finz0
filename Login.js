@@ -1,9 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-
-/* ───────────── PARTICLE BACKGROUND ───────────── */
 function ParticleCanvas() {
   const canvasRef = useRef(null);
-
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
@@ -13,7 +10,6 @@ function ParticleCanvas() {
       canvas.width = canvas.offsetWidth;
       canvas.height = canvas.offsetHeight;
     };
-
     resize();
     window.addEventListener("resize", resize);
 
@@ -65,8 +61,6 @@ function ParticleCanvas() {
     />
   );
 }
-
-/* ───────────── MAIN LOGIN ───────────── */
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -105,7 +99,7 @@ function Login() {
         fontFamily: "Arial, sans-serif",
       }}
     >
-      {/* LEFT SIDE */}
+      {}
       {!isMobile && (
         <div
           style={{
@@ -144,7 +138,7 @@ function Login() {
         </div>
       )}
 
-      {/* RIGHT SIDE */}
+      {}
       <div
         style={{
           width: isMobile ? "100%" : "480px",
@@ -334,5 +328,6 @@ function Login() {
     </div>
   );
 }
+
 
 export default Login;
