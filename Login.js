@@ -5,7 +5,7 @@ function ParticleCanvas() {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
     let animationFrameId;
-
+//animation id
     const resize = () => {
       canvas.width = canvas.offsetWidth;
       canvas.height = canvas.offsetHeight;
@@ -21,7 +21,7 @@ function ParticleCanvas() {
       dy: (Math.random() - 0.5) * 0.3,
       alpha: Math.random() * 0.4 + 0.1,
     }));
-
+//rendering
     const render = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
